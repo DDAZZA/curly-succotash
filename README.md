@@ -1,5 +1,7 @@
-https://ddazza.github.io/curly-succotash/test-noopener.html
+## Exploits
 
-https://ddazza.github.io/curly-succotash/test-iframe.html
+[test-noopener](./test-noopener.html)
 
-https://ddazza.github.io/curly-succotash/test-cors.html
+[test-iframe](./test-iframe.html)
+
+[test-cors](./test-cors.html)
