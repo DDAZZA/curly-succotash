@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://mathiasbynens.github.io/rel-noopener/malicious.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Go back!</title>
+</head><body><h1>Why don’t you go back to the previous tab?</h1>
+<script>
+	if (window.opener) {
+		opener.location = 'https://example.com/#hax';
+		// Just `opener.location.hash = '#hax'` only works on the same origin.
+	} else {
+		document.querySelector('h1').innerHTML = 'The previous tab is safe and intact. <code>window.opener</code> was <code>null</code>; mischief <em>not</em> managed!';
+	}
+</script>
+</body></html>
