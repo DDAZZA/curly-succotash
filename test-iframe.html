@@ -1,17 +1,37 @@
+<!DOCTYPE html>
 <html>
-    <title>Hacked</title>
-    <div>Hacked</div>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <script>
+      function exploit() {
+        value=document.getElementById("urlInput").value
+        document.getElementsByTagName("iframe")[0].src=value;
+        console.log("set IFrame src to " + value);
+      }
+    </script>
+  </head>
 
-    <div id="myiframe">
-    <iframe frameborder="0" src="example.com"></iframe>
-    </div>
+  <body>
+    <center>
+      <h2>IFrame PoC Exploit </h2>
+      <h3>by DDAZZA</h3>
+      <div id="demo">
+        <input id="urlInput" type="text" value="http://example.com">
+        <button type="button" onclick="exploit()">Try Exploit</button>
+      </div>
+      </center>
+  </body>
+
+
+  <iframe frameborder="0" ></iframe>
 </html>
 
 
 <style>
-  iframe:focus {
-    outline: none;
-  }
+iframe:focus {
+  outline: none;
+}
 
   iframe[seamless] {
     display: block;
