@@ -1,8 +1,7 @@
 ## Exploits
 
 
-<details>
-  <summary>test-noopener</summary>
+<details><summary>test-noopener</summary><p>
   
   [link](./test-noopener.html)
   
@@ -12,7 +11,7 @@
 Get target site to open this in a new `_blank` tab
 
 
-</details>
+</p></details>
 
 [test-iframe](./test-iframe.html)
 
